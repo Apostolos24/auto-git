@@ -4,6 +4,7 @@ A small bash/batch script to pull and push from a local repo to github and rever
 # Setup
 ### Configure git name and email
 ```git config --global user.name "your_name"```
+
 ```git config --global user.email "your_email@example.com"```
 <br>
 
