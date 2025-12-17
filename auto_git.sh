@@ -49,7 +49,7 @@ if [ -n "$(git status --porcelain)" ]; then
 
     echo ""
     echo "[ACTION] Pushing to GitHub..."
-    git push origin main
+    git push
 
     echo "[SUCCESS] Local changes pushed to remote."
 else
