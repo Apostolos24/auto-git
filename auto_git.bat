@@ -2,7 +2,8 @@
 setlocal
 
 :: Default values
-set "COMMIT_MSG=Auto-sync: %DATE% %TIME%"
+for /f "delims=" %%a in ('powershell -Command "(Get-Date).ToString(\"ddd MMM dd HH:mm:ss 'EET' yyyy\", [System.Globalization.CultureInfo]::GetCultureInfo(\"en-US\"))"') do set "TIMESTAMP=%%a"
+set "COMMIT_MSG=Auto-sync: %TIMESTAMP%"
 set "FORCE_PUSH=false"
 
 :parse_args
