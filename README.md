@@ -2,6 +2,11 @@
 A small bash/batch script to pull and push from a local repo to github and reverse.
 
 # Setup
+### Download the script
+Linux: Download **auto_git.sh** in your prefered directory and run ```chmod +x auto_git.sh```. For easier use you can add auto_git.sh to your $PATH so you can call it directly from anywhere.
+MAC: Download **auto_git.command** in your prefered directory and run ```chmod +x auto_git.command```.
+Windows: Download **auto_git.bat** in a folder.
+
 ### Configure git name and email
 ```git config --global user.name "your_name"```
 
@@ -24,7 +29,7 @@ A small bash/batch script to pull and push from a local repo to github and rever
 <br>
 
 # How to use
-```./auto_ssh [-m <commit_message>] [-f] [-h]```
+```Linux: ./auto_git [-m <commit_message>] [-f] [-h]```
 
 ### Basic Use
 The script first pulls all changes from the **main** branch on the remote github repo. Then it adds+commits the changes to your local repo with a commit message: 
@@ -37,4 +42,4 @@ Flags are optional and provide extra functionality.
   
   ```-f```  : Force push (use with caution!)
   
-  ```-h```  : Show this help message
+  ```-h```  : Show help message
